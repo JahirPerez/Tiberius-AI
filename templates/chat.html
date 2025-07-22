@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiberius Shipping Oracle</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⚓ Tiberius Maritime Oracle</h1>
+    <form method="post">
+      <input type="text" name="query" placeholder="Ask about ship routes or cargo...">
+      <input type="submit" value="Ask Lucius">
+    </form>
+    {% if answer %}
+      <div class="response">📜 {{ answer }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>
